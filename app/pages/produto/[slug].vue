@@ -1,1 +1,46 @@
-<script setup lang="ts">import{products,money}from'~/data/products';const route=useRoute();const product=computed(()=>products.find(p=>p.slug===route.params.slug)??products[3]);const{add,slugs,hydrate}=useInterestCart();onMounted(hydrate);const saved=computed(()=>slugs.value.includes(product.value.slug));const related=computed(()=>products.filter(p=>p.slug!==product.value.slug).slice(0,4));useSeoMeta({title:()=>`${product.value.name} — 3 Duna`})</script><template><div class="page-shell detail-page"><SiteHeader/><main class="detail-main container"><p class="breadcrumb">CATÁLOGO / {{product.category}} / {{product.name.toUpperCase()}}</p><section class="detail-hero"><div class="gallery"><ProductVisual :product="product" large/><div class="thumbs"><button class="thumb active"><span :style="{background:product.tone}"/>Frontal</button><button class="thumb"><span/>Lateral</button><button class="thumb"><span/>Em uso</button><button class="thumb"><span/>Detalhe</button></div></div><div class="product-info"><span class="eyebrow">{{product.category}}</span><h1>{{product.name}}</h1><p class="rating">★★★★★ 4,9 · 28 avaliações</p><strong class="detail-price">{{money(product.price)}}</strong><p class="muted small">Adicione ao carrinho para salvar esta peça.</p><p class="detail-description">{{product.description}}</p><button class="primary-button" :class="{saved}" @click="add(product.slug)">{{saved?'Peça salva no carrinho':'Quero essa peça'}}</button></div></section><section class="trust-bar"><div><b>01</b><strong>Produção sob demanda</strong><span>{{product.production}}</span></div><div><b>02</b><strong>Carrinho de interesse</strong><span>Salve as peças que você mais gostou</span></div><div><b>03</b><strong>Escolha com calma</strong><span>Veja os detalhes antes de salvar</span></div><div><b>04</b><strong>Feito camada por camada</strong><span>Textura faz parte do processo</span></div></section><section class="specs-card"><div class="spec-copy"><span class="eyebrow">DETALHES DO OBJETO</span><h2>Feito para funcionar<br>no mundo real.</h2><p>Cada unidade é produzida após o pedido. Pequenas marcas de camada podem aparecer e fazem parte da linguagem do processo de impressão 3D.</p></div><dl><dt>Dimensões</dt><dd>{{product.dimensions}}</dd><dt>Material</dt><dd>{{product.material}}</dd><dt>Peso aproximado</dt><dd>{{product.weight}}</dd><dt>Acabamento</dt><dd>{{product.finish}}</dd><dt>Produção</dt><dd>{{product.production}}</dd></dl></section><section class="layer-story"><div><span class="eyebrow">CAMADA POR CAMADA</span><h2>Do arquivo ao objeto.</h2><p>Modelagem → fatiamento → impressão → acabamento</p></div><div class="layer-shape"><i v-for="i in 8" :key="i" :style="{width:`${150+i*18}px`}"/></div></section><section class="related"><h2>Você também pode gostar</h2><p class="muted small">Outros objetos da mesma linha.</p><div class="related-grid"><ProductCard v-for="item in related" :key="item.slug" :product="item"/></div></section></main><SiteFooter/></div></template>
+<script setup lang="ts">
+import { products } from '~/data/products'
+
+const route = useRoute()
+const product = computed(() => products.find(p => p.slug === route.params.slug) ?? products[0])
+const { add, slugs, hydrate } = useInterestCart()
+onMounted(hydrate)
+const saved = computed(() => slugs.value.includes(product.value.slug))
+const related = computed(() => products.filter(p => p.slug !== product.value.slug).slice(0, 4))
+useSeoMeta({ title: () => `${product.value.name} — 3 Duna` })
+</script>
+
+<template>
+  <div class="page-shell detail-page">
+    <SiteHeader />
+    <main class="detail-main container">
+      <p class="breadcrumb">CATÁLOGO / PEÇA {{ product.code }}</p>
+      <section class="detail-hero">
+        <div class="gallery">
+          <ProductVisual :product="product" large />
+        </div>
+        <div class="product-info">
+          <span class="eyebrow">CATÁLOGO 3 DUNA</span>
+          <h1>{{ product.name }}</h1>
+          <p class="muted small">Referência {{ product.code }}</p>
+          <p class="detail-description">{{ product.description }}</p>
+          <button class="primary-button" :class="{ saved }" @click="add(product.slug)">
+            {{ saved ? 'Peça salva no carrinho' : 'Quero essa peça' }}
+          </button>
+        </div>
+      </section>
+      <section class="trust-bar compact-trust">
+        <div><b>01</b><strong>Carrinho de interesse</strong><span>Salve as peças que você gostou</span></div>
+        <div><b>02</b><strong>Escolha com calma</strong><span>Veja cada peça em detalhe</span></div>
+      </section>
+      <section class="related">
+        <h2>Você também pode gostar</h2>
+        <p class="muted small">Outras peças do catálogo.</p>
+        <div class="related-grid">
+          <ProductCard v-for="item in related" :key="item.slug" :product="item" />
+        </div>
+      </section>
+    </main>
+    <SiteFooter />
+  </div>
+</template>
