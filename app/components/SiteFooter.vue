@@ -1,0 +1,1 @@
+<template><footer class="site-footer"><strong>3 DUNA</strong><NuxtLink to="/">Catálogo</NuxtLink></footer></template>
