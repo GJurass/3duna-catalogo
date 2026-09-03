@@ -1,10 +1,25 @@
-export type ProductVisual = 'headset' | 'duna' | 'controller' | 'modular' | 'orbit' | 'desk'
-export type Product = { slug:string; name:string; category:string; material:string; price:number; visual:ProductVisual; tone:string; description:string; dimensions:string; weight:string; finish:string; production:string }
-export const products: Product[] = [
-{slug:'suporte-headset-arc',name:'Suporte Headset Arc',category:'ORGANIZAÇÃO',material:'PLA',price:49.9,visual:'headset',tone:'#d8c09a',description:'Suporte compacto para manter seu headset organizado e sempre ao alcance.',dimensions:'16 × 10 × 9 cm',weight:'180 g',finish:'Fosco',production:'2–4 dias úteis'},
-{slug:'vaso-duna-02',name:'Vaso Duna 02',category:'DECORAÇÃO',material:'PLA',price:39.9,visual:'duna',tone:'#e97843',description:'Vaso decorativo inspirado em camadas e curvas de dunas, produzido sob demanda.',dimensions:'14 × 14 × 18 cm',weight:'210 g',finish:'Fosco',production:'2–4 dias úteis'},
-{slug:'dock-controle-duo',name:'Dock Controle Duo',category:'GEEK & GAMES',material:'PETG',price:59.9,visual:'controller',tone:'#2b2e34',description:'Base para organizar dois controles com visual limpo e estrutura resistente.',dimensions:'22 × 12 × 10 cm',weight:'260 g',finish:'Fosco',production:'2–4 dias úteis'},
-{slug:'organizador-modular',name:'Organizador Modular',category:'CASA',material:'PLA',price:44.9,visual:'modular',tone:'#c8b89e',description:'Organize objetos do dia a dia com um sistema modular impresso sob demanda. Veja os detalhes da peça e salve no carrinho se gostar.',dimensions:'18 × 12 × 9 cm',weight:'220 g',finish:'Fosco',production:'2–4 dias úteis'},
-{slug:'luminaria-orbit',name:'Luminária Orbit',category:'DECORAÇÃO',material:'PLA',price:79.9,visual:'orbit',tone:'#bc926c',description:'Luminária decorativa com desenho leve e linhas marcadas pela impressão em camadas.',dimensions:'16 × 16 × 22 cm',weight:'320 g',finish:'Fosco',production:'3–5 dias úteis'},
-{slug:'base-desk-mini',name:'Base Desk Mini',category:'ORGANIZAÇÃO',material:'PETG',price:34.9,visual:'desk',tone:'#aab0b8',description:'Base compacta para pequenos acessórios de mesa, cabos e objetos do dia a dia.',dimensions:'15 × 10 × 5 cm',weight:'150 g',finish:'Fosco',production:'2–4 dias úteis'}]
-export const money=(value:number)=>new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(value)
+import images1 from './product-images-1'
+import images2 from './product-images-2'
+import images3 from './product-images-3'
+import images4 from './product-images-4'
+
+const images: Record<string, string> = { ...images1, ...images2, ...images3, ...images4 }
+
+export type Product = {
+  slug: string
+  code: string
+  name: string
+  image: string
+  description: string
+}
+
+export const products: Product[] = Array.from({ length: 20 }, (_, index) => {
+  const code = String(index + 1).padStart(3, '0')
+  return {
+    slug: `peca-${code}`,
+    code,
+    name: `Peça ${code}`,
+    image: images[code],
+    description: 'Peça do catálogo 3 Duna. Mais informações sobre este modelo serão adicionadas em breve.'
+  }
+})
