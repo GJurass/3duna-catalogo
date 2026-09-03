@@ -1,1 +1,17 @@
-<script setup lang="ts">import type{Product}from'~/data/products';import{money}from'~/data/products';defineProps<{product:Product}>()</script><template><article class="product-card"><ProductVisual :product="product"/><div class="product-card-body"><span class="eyebrow">{{ product.category }}</span><h2>{{ product.name }}</h2><span class="muted small">Produzido sob demanda</span><div class="product-card-bottom"><strong>{{ money(product.price) }}</strong><NuxtLink :to="`/produto/${product.slug}`" class="ghost-button">Ver peça</NuxtLink></div></div></article></template>
+<script setup lang="ts">
+import type { Product } from '~/data/products'
+defineProps<{ product: Product }>()
+</script>
+
+<template>
+  <article class="product-card">
+    <ProductVisual :product="product" />
+    <div class="product-card-body">
+      <span class="eyebrow">PEÇA {{ product.code }}</span>
+      <h2>{{ product.name }}</h2>
+      <div class="product-card-bottom">
+        <NuxtLink :to="`/produto/${product.slug}`" class="ghost-button">Ver peça</NuxtLink>
+      </div>
+    </div>
+  </article>
+</template>
