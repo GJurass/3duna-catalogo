@@ -48,15 +48,29 @@ export type Product = {
   name: string
   image: string
   description: string
+  price?: string
+  priceNote?: string
+}
+
+const productOverrides: Record<string, Partial<Product>> = {
+  '008': {
+    name: 'Calha',
+    price: 'R$ 21,75',
+    priceNote: 'a unidade',
+    description: 'Calha do catálogo 3 Duna. Valor por unidade. Mais informações sobre medidas, material e disponibilidade serão adicionadas em breve.'
+  }
 }
 
 export const products: Product[] = Array.from({ length: 20 }, (_, index) => {
   const code = String(index + 1).padStart(3, '0')
+  const override = productOverrides[code] ?? {}
+
   return {
     slug: `peca-${code}`,
     code,
     name: `Peça ${code}`,
     image: images[code],
-    description: 'Peça do catálogo 3 Duna. Mais informações sobre este modelo serão adicionadas em breve.'
+    description: 'Peça do catálogo 3 Duna. Mais informações sobre este modelo serão adicionadas em breve.',
+    ...override
   }
 })
