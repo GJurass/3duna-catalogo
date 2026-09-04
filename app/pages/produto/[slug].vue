@@ -23,6 +23,10 @@ useSeoMeta({ title: () => `${product.value.name} — 3 Duna` })
           <span class="eyebrow">CATÁLOGO 3 DUNA</span>
           <h1>{{ product.name }}</h1>
           <p class="muted small">Referência {{ product.code }}</p>
+          <div v-if="product.price" class="detail-price-block">
+            <strong class="detail-price">{{ product.price }}</strong>
+            <span v-if="product.priceNote">{{ product.priceNote }}</span>
+          </div>
           <p class="detail-description">{{ product.description }}</p>
           <button class="primary-button" :class="{ saved }" @click="add(product.slug)">
             {{ saved ? 'Peça salva no carrinho' : 'Quero essa peça' }}
