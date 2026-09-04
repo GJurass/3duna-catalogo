@@ -53,6 +53,15 @@ export type Product = {
 }
 
 const productOverrides: Record<string, Partial<Product>> = {
+  '002': {
+    price: 'R$ 8,90'
+  },
+  '003': {
+    price: 'R$ 8,90'
+  },
+  '007': {
+    price: 'R$ 17,80'
+  },
   '008': {
     name: 'Calha',
     price: 'R$ 21,75',
