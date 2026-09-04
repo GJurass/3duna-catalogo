@@ -20,6 +20,7 @@ useSeoMeta({ title: 'Carrinho de interesse — 3 Duna' })
           <h2>{{ count }} {{ count === 1 ? 'peça salva' : 'peças salvas' }}</h2>
           <div v-for="product in items" :key="product!.slug" class="summary-row">
             <span>{{ product!.name }}</span>
+            <strong v-if="product!.price">{{ product!.price }}</strong>
           </div>
           <p class="muted">Este carrinho é apenas uma lista de interesse para você não perder as peças que gostou.</p>
           <div class="summary-actions">
