@@ -69,6 +69,14 @@ const productOverrides: Record<string, Partial<Product>> = {
     priceNote: 'a unidade',
     description: 'Calha do catálogo 3 Duna. Valor por unidade. Mais informações sobre medidas, material e disponibilidade serão adicionadas em breve.'
   },
+  '015': {
+    image: '/products/015-1.png',
+    images: [
+      '/products/015-1.png',
+      '/products/015-2.png',
+      '/products/015-3.png'
+    ]
+  },
   '017': {
     image: '/products/017-2.png',
     images: [
