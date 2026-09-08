@@ -47,6 +47,7 @@ export type Product = {
   code: string
   name: string
   image: string
+  images?: string[]
   description: string
   price?: string
   priceNote?: string
@@ -67,6 +68,14 @@ const productOverrides: Record<string, Partial<Product>> = {
     price: 'R$ 21,75',
     priceNote: 'a unidade',
     description: 'Calha do catálogo 3 Duna. Valor por unidade. Mais informações sobre medidas, material e disponibilidade serão adicionadas em breve.'
+  },
+  '019': {
+    image: '/products/019-1.png',
+    images: [
+      '/products/019-1.png',
+      '/products/019-2.png',
+      '/products/019-3.png'
+    ]
   }
 }
 
