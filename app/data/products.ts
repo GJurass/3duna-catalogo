@@ -61,7 +61,7 @@ const productOverrides: Record<string, Partial<Product>> = {
       '/products/001-3.png',
       '/products/001-1.png',
       '/products/001-2.png',
-      '/products/001-demo.gif'
+      '/products/001-demo.mp4'
     ],
     description: 'Peça desenvolvida para fechar a abertura existente em portas de máquinas de café que originalmente possuem módulo de pagamento. Permite tampar o espaço e aplicar adesivo sobre a superfície, deixando o acabamento mais uniforme, sem relevo aparente. Compatível com modelos antigos de Onix tradicional, Jade solúvel, Jade grão e Onix tradicional grão.',
     price: 'R$ 13,90'
