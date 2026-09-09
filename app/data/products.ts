@@ -55,8 +55,9 @@ export type Product = {
 
 const productOverrides: Record<string, Partial<Product>> = {
   '001': {
-    image: '/products/001-1.png',
+    image: '/products/001-3.png',
     images: [
+      '/products/001-3.png',
       '/products/001-1.png',
       '/products/001-2.png'
     ]
