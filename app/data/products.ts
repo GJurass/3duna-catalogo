@@ -110,7 +110,10 @@ const productOverrides: Record<string, Partial<Product>> = {
     image: '/products/006-2.png',
     images: [
       '/products/006-2.png',
-      '/products/006-1.png'
+      '/products/006-1.png',
+      '/products/030-1.png',
+      '/products/030-2.png',
+      '/products/006-real.jpg'
     ]
   },
   '007': {
@@ -293,19 +296,16 @@ const productOverrides: Record<string, Partial<Product>> = {
       '/products/029-3.png'
     ]
   },
-  '030': {
-    image: '/products/030-1.png',
-    images: [
-      '/products/030-1.png',
-      '/products/030-2.png'
-    ]
-  },
   '031': {
+    name: 'Peça 030',
     image: '/products/031-1.png',
     images: [
       '/products/031-1.png',
       '/products/031-2.png'
     ]
+  },
+  '032': {
+    name: 'Peça 031',
   },
   '033': {
     name: 'Peça 032',
@@ -339,4 +339,4 @@ export const products: Product[] = Array.from({ length: 34 }, (_, index) => {
     description: 'Peça do catálogo 3 Duna. Mais informações sobre este modelo serão adicionadas em breve.',
     ...override
   }
-}).filter(product => product.code !== '032')
+}).filter(product => product.code !== '030')
