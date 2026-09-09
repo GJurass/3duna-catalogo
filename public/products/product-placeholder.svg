@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title description">
+  <title id="title">Imagem da peça em preparação</title>
+  <desc id="description">Placeholder neutro para peça do catálogo 3 Duna</desc>
+  <rect width="1200" height="900" fill="#050505"/>
+  <g transform="translate(600 425)" fill="none" stroke="#d9d9d9" stroke-width="22" stroke-linejoin="round">
+    <path d="M-235-115 0-240l235 125L0 10z" fill="#ededed"/>
+    <path d="M-235-115V150L0 280V10z" fill="#cfcfcf"/>
+    <path d="M235-115V150L0 280V10z" fill="#b9b9b9"/>
+  </g>
+  <text x="600" y="800" fill="#e8e8e8" font-family="Arial, sans-serif" font-size="42" text-anchor="middle" letter-spacing="6">IMAGEM EM BREVE</text>
+</svg>

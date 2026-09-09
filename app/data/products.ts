@@ -190,7 +190,7 @@ const productOverrides: Record<string, Partial<Product>> = {
   }
 }
 
-export const products: Product[] = Array.from({ length: 20 }, (_, index) => {
+export const products: Product[] = Array.from({ length: 34 }, (_, index) => {
   const code = String(index + 1).padStart(3, '0')
   const override = productOverrides[code] ?? {}
 
@@ -198,7 +198,7 @@ export const products: Product[] = Array.from({ length: 20 }, (_, index) => {
     slug: `peca-${code}`,
     code,
     name: `Peça ${code}`,
-    image: images[code],
+    image: images[code] ?? '/products/product-placeholder.svg',
     description: 'Peça do catálogo 3 Duna. Mais informações sobre este modelo serão adicionadas em breve.',
     ...override
   }
