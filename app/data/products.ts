@@ -188,6 +188,13 @@ const productOverrides: Record<string, Partial<Product>> = {
       '/products/019-1.png'
     ]
   },
+  '028': {
+    image: '/products/028-1.png',
+    images: [
+      '/products/028-1.png',
+      '/products/028-2.png'
+    ]
+  },
   '029': {
     image: '/products/029-1.png',
     images: [
