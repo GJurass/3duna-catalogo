@@ -138,11 +138,15 @@ const productOverrides: Record<string, Partial<Product>> = {
     description: 'Calha do catálogo 3 Duna. Valor por unidade. Mais informações sobre medidas, material e disponibilidade serão adicionadas em breve.'
   },
   '009': {
+    name: 'Caixa de Aspiração BVM 952',
     image: '/products/009-1.png',
     images: [
       '/products/009-1.png',
       '/products/009-2.png'
-    ]
+    ],
+    price: 'R$ 38,00',
+    priceNote: 'a unidade',
+    description: 'Caixa de aspiração desenvolvida para reposição e organização do sistema interno da máquina. Compatível com a máquina de café Bianchi BVM 952.'
   },
   '010': {
     image: '/products/010-1.png',
