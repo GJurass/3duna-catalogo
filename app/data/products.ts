@@ -74,7 +74,7 @@ const productOverrides: Record<string, Partial<Product>> = {
       '/products/002-1.png',
       '/products/002-3.png'
     ],
-    description: 'Peça desenvolvida para armazenar e proteger pequenos circuitos elétricos. Pode ser fixada diretamente na máquina, ajudando a manter os componentes organizados, protegidos e oferecendo mais segurança para a operação. Dimensões: a informar.',
+    description: 'Peça desenvolvida para armazenar e proteger pequenos circuitos elétricos. Pode ser fixada diretamente na máquina, ajudando a manter os componentes organizados, protegidos e oferecendo mais segurança para a operação. Dimensões: 5,5 cm de comprimento × 3,5 cm de largura × 2 cm de profundidade.',
     price: 'R$ 13,90'
   },
   '003': {
@@ -85,7 +85,7 @@ const productOverrides: Record<string, Partial<Product>> = {
       '/products/003-2.png',
       '/products/003-3.png'
     ],
-    description: 'Peça desenvolvida para acomodar e proteger pequenos circuitos elétricos, com estrutura aberta para facilitar a passagem de fios, conexões e o acesso aos componentes. Pode ser fixada diretamente na máquina, mantendo a instalação mais organizada e segura. Dimensões: a informar.',
+    description: 'Peça desenvolvida para acomodar e proteger pequenos circuitos elétricos, com estrutura aberta para facilitar a passagem de fios, conexões e o acesso aos componentes. Pode ser fixada diretamente na máquina, mantendo a instalação mais organizada e segura. Dimensões: 7 cm de comprimento × 4 cm de largura × 2,5 cm de profundidade.',
     price: 'R$ 13,90'
   },
   '004': {
@@ -308,6 +308,7 @@ const productOverrides: Record<string, Partial<Product>> = {
     ]
   },
   '033': {
+    name: 'Peça 032',
     image: '/products/033-1.png',
     images: [
       '/products/033-1.png',
@@ -316,6 +317,7 @@ const productOverrides: Record<string, Partial<Product>> = {
     ]
   },
   '034': {
+    name: 'Peça 033',
     image: '/products/034-1.png',
     images: [
       '/products/034-1.png',
@@ -337,4 +339,4 @@ export const products: Product[] = Array.from({ length: 34 }, (_, index) => {
     description: 'Peça do catálogo 3 Duna. Mais informações sobre este modelo serão adicionadas em breve.',
     ...override
   }
-})
+}).filter(product => product.code !== '032')
