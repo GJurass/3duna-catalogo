@@ -152,14 +152,6 @@ const productOverrides: Record<string, Partial<Product>> = {
     ]
   },
   '011': {
-    image: '/products/011-2.png',
-    images: [
-      '/products/011-2.png',
-      '/products/011-1.png',
-      '/products/011-3.png'
-    ]
-  },
-  '012': {
     image: '/products/012-1.png',
     images: [
       '/products/012-1.png',
@@ -167,7 +159,7 @@ const productOverrides: Record<string, Partial<Product>> = {
       '/products/012-3.png'
     ]
   },
-  '013': {
+  '012': {
     image: '/products/013-1.png',
     images: [
       '/products/013-1.png',
@@ -175,7 +167,7 @@ const productOverrides: Record<string, Partial<Product>> = {
       '/products/013-3.png'
     ]
   },
-  '014': {
+  '013': {
     image: '/products/014-1.png',
     images: [
       '/products/014-1.png',
@@ -183,7 +175,7 @@ const productOverrides: Record<string, Partial<Product>> = {
       '/products/014-3.png'
     ]
   },
-  '015': {
+  '014': {
     image: '/products/015-1.png',
     images: [
       '/products/015-1.png',
@@ -191,14 +183,14 @@ const productOverrides: Record<string, Partial<Product>> = {
       '/products/015-3.png'
     ]
   },
-  '016': {
+  '015': {
     image: '/products/016-1.png',
     images: [
       '/products/016-1.png',
       '/products/016-2.png'
     ]
   },
-  '017': {
+  '016': {
     image: '/products/017-2.png',
     images: [
       '/products/017-2.png',
@@ -206,7 +198,7 @@ const productOverrides: Record<string, Partial<Product>> = {
       '/products/017-3.png'
     ]
   },
-  '018': {
+  '017': {
     image: '/products/018-3.png',
     images: [
       '/products/018-3.png',
@@ -214,7 +206,7 @@ const productOverrides: Record<string, Partial<Product>> = {
       '/products/018-1.png'
     ]
   },
-  '019': {
+  '018': {
     image: '/products/019-3.png',
     images: [
       '/products/019-3.png',
@@ -222,28 +214,28 @@ const productOverrides: Record<string, Partial<Product>> = {
       '/products/019-1.png'
     ]
   },
-  '020': {
+  '019': {
     image: '/products/020-1.png',
     images: [
       '/products/020-1.png',
       '/products/020-2.png'
     ]
   },
-  '021': {
+  '020': {
     image: '/products/021-1.png',
     images: [
       '/products/021-1.png',
       '/products/021-2.png'
     ]
   },
-  '022': {
+  '021': {
     image: '/products/022-1.png',
     images: [
       '/products/022-1.png',
       '/products/022-2.png'
     ]
   },
-  '023': {
+  '022': {
     image: '/products/023-1.png',
     images: [
       '/products/023-1.png',
@@ -251,7 +243,7 @@ const productOverrides: Record<string, Partial<Product>> = {
       '/products/023-3.png'
     ]
   },
-  '024': {
+  '023': {
     image: '/products/024-1.png',
     images: [
       '/products/024-1.png',
@@ -259,7 +251,7 @@ const productOverrides: Record<string, Partial<Product>> = {
       '/products/024-3.png'
     ]
   },
-  '025': {
+  '024': {
     image: '/products/025-1.png',
     images: [
       '/products/025-1.png',
@@ -267,14 +259,14 @@ const productOverrides: Record<string, Partial<Product>> = {
       '/products/025-3.png'
     ]
   },
-  '026': {
+  '025': {
     image: '/products/026-1.png',
     images: [
       '/products/026-1.png',
       '/products/026-2.png'
     ]
   },
-  '027': {
+  '026': {
     image: '/products/027-1.png',
     images: [
       '/products/027-1.png',
@@ -282,14 +274,14 @@ const productOverrides: Record<string, Partial<Product>> = {
       '/products/027-3.png'
     ]
   },
-  '028': {
+  '027': {
     image: '/products/028-1.png',
     images: [
       '/products/028-1.png',
       '/products/028-2.png'
     ]
   },
-  '029': {
+  '028': {
     image: '/products/029-1.png',
     images: [
       '/products/029-1.png',
@@ -297,7 +289,7 @@ const productOverrides: Record<string, Partial<Product>> = {
       '/products/029-3.png'
     ]
   },
-  '031': {
+  '029': {
     name: 'Peça 031',
     image: '/products/031-1.png',
     images: [
@@ -305,7 +297,7 @@ const productOverrides: Record<string, Partial<Product>> = {
       '/products/031-2.png'
     ]
   },
-  '033': {
+  '030': {
     name: 'Peça 031',
     image: '/products/033-1.png',
     images: [
@@ -314,7 +306,7 @@ const productOverrides: Record<string, Partial<Product>> = {
       '/products/033-3.png'
     ]
   },
-  '034': {
+  '031': {
     name: 'Peça 032',
     image: '/products/034-1.png',
     images: [
