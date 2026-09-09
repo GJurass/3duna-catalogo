@@ -55,38 +55,49 @@ export type Product = {
 
 const productOverrides: Record<string, Partial<Product>> = {
   '001': {
+    name: 'Tapa Buraco para Porta de Máquina de Café',
     image: '/products/001-3.png',
     images: [
       '/products/001-3.png',
       '/products/001-1.png',
-      '/products/001-2.png'
-    ]
+      '/products/001-2.png',
+      '/products/001-demo.gif'
+    ],
+    description: 'Peça desenvolvida para fechar a abertura existente em portas de máquinas de café que originalmente possuem módulo de pagamento. Permite tampar o espaço e aplicar adesivo sobre a superfície, deixando o acabamento mais uniforme, sem relevo aparente. Compatível com modelos antigos de Onix tradicional, Jade solúvel, Jade grão e Onix tradicional grão.',
+    price: 'R$ 13,90'
   },
   '002': {
+    name: 'Caixinha Customizada para Circuitos',
     image: '/products/002-2.png',
     images: [
       '/products/002-2.png',
       '/products/002-1.png',
       '/products/002-3.png'
     ],
-    price: 'R$ 8,90'
+    description: 'Peça desenvolvida para armazenar e proteger pequenos circuitos elétricos. Pode ser fixada diretamente na máquina, ajudando a manter os componentes organizados, protegidos e oferecendo mais segurança para a operação. Dimensões: a informar.',
+    price: 'R$ 13,90'
   },
   '003': {
+    name: 'Caixinha Customizada para Circuitos sem Parede',
     image: '/products/003-1.png',
     images: [
       '/products/003-1.png',
       '/products/003-2.png',
       '/products/003-3.png'
     ],
-    price: 'R$ 8,90'
+    description: 'Peça desenvolvida para acomodar e proteger pequenos circuitos elétricos, com estrutura aberta para facilitar a passagem de fios, conexões e o acesso aos componentes. Pode ser fixada diretamente na máquina, mantendo a instalação mais organizada e segura. Dimensões: a informar.',
+    price: 'R$ 13,90'
   },
   '004': {
+    name: 'Gaveta de Aspiração',
     image: '/products/004-1.png',
     images: [
       '/products/004-1.png',
       '/products/004-2.png',
       '/products/004-3.png'
-    ]
+    ],
+    description: 'Peça desenvolvida para o sistema de aspiração da máquina de café, proporcionando encaixe prático e melhor organização do conjunto interno. Compatível com máquinas de café Lei Sá e Gaia Espresso Bianchi I, com encaixe universal padrão DIRIM.',
+    price: 'R$ 17,60'
   },
   '005': {
     image: '/products/005-1.png',
