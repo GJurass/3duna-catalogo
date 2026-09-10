@@ -109,7 +109,7 @@ const productOverrides: Record<string, Partial<Product>> = {
     description: 'Tampa de reposição para torre de copos, desenvolvida para garantir melhor acabamento e proteção do compartimento. Compatível com as máquinas LEI 400 e BVM 952 Bianchi.',
     price: 'R$ 33,00'
   },
-  '006 e 030': {
+  '006': {
     image: '/products/006-cover.png',
     images: [
       '/products/006-cover.png',
@@ -118,7 +118,8 @@ const productOverrides: Record<string, Partial<Product>> = {
       '/products/030-1.png',
       '/products/030-2.png',
       '/products/006-real.jpg'
-    ]
+    ],
+    description: 'Código 006 e 030'
   },
   '007': {
     image: '/products/007-1.png',
@@ -271,7 +272,7 @@ const productOverrides: Record<string, Partial<Product>> = {
     description: 'Compatível com máquinas de café Lei Sá e Gaia Expresso Bianchi. Encaixe universal padrão DIRIM.',
     price: 'R$ 5,90',
   },
-  '025 e 026': {
+  '025': {
     name: 'Presilhas Salva Pote',
     image: '/products/025-1.png',
     images: [
@@ -281,7 +282,7 @@ const productOverrides: Record<string, Partial<Product>> = {
       '/products/026-1.png',
       '/products/026-2.png',
     ],
-    description: 'Compatível com potes de café/cacau/leite e afins Lei Sá e Gaia Expresso Bianchi. Encaixe universal padrão DIRIM.',
+    description: 'Compatível com potes de café/cacau/leite e afins Lei Sá e Gaia Expresso Bianchi. Encaixe universal padrão DIRIM. Peça 025 e 026. Vendidas em pares.',
     price: '19,60',
     priceNote: 'o par'
   },
