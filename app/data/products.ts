@@ -109,7 +109,7 @@ const productOverrides: Record<string, Partial<Product>> = {
     description: 'Tampa de reposição para torre de copos, desenvolvida para garantir melhor acabamento e proteção do compartimento. Compatível com as máquinas LEI 400 e BVM 952 Bianchi.',
     price: 'R$ 33,00'
   },
-  '006': {
+  '006 e 030': {
     image: '/products/006-cover.png',
     images: [
       '/products/006-cover.png',
@@ -129,16 +129,16 @@ const productOverrides: Record<string, Partial<Product>> = {
     price: 'R$ 17,80'
   },
   '008': {
-    name: 'Calha',
+    name: 'Calha Vend -',
     image: '/products/008-1.png',
     images: [
       '/products/008-1.png',
       '/products/008-2.png',
       '/products/008-3.png'
     ],
-    price: 'R$ 21,75',
+    price: 'R$ 8,90',
     priceNote: 'a unidade',
-    description: 'Calha do catálogo 3 Duna. Valor por unidade. Mais informações sobre medidas, material e disponibilidade serão adicionadas em breve.'
+    description: 'Compatível com a Vend'
   },
   '009': {
     name: 'Caixa de Aspiração BVM 952',
@@ -152,11 +152,15 @@ const productOverrides: Record<string, Partial<Product>> = {
     description: 'Caixa de aspiração desenvolvida para reposição e organização do sistema interno da máquina. Compatível com a máquina de café Bianchi BVM 952.'
   },
   '010': {
+    name: 'Calha Vend +',
     image: '/products/010-1.png',
     images: [
       '/products/010-1.png',
       '/products/010-2.png'
-    ]
+    ],
+    description: 'Compatível com a Vend',
+    price: 'R$ 8,90',
+    priceNote: 'a unidade'
   },
   '012': {
     image: '/products/012-1.png',
@@ -246,83 +250,104 @@ const productOverrides: Record<string, Partial<Product>> = {
     price: 'R$ 15,00'
   },
   '023': {
+    name: 'Tampa da Calha Esquerda',
     image: '/products/023-1.png',
     images: [
       '/products/023-1.png',
       '/products/023-2.png',
       '/products/023-3.png'
-    ]
+    ],
+    description: 'Compatível com máquinas de café Lei Sá e Gaia Expresso Bianchi. Encaixe universal padrão DIRIM.',
+    price: 'R$ 5,90',
   },
   '024': {
+    name: 'Tampa da Calha Direita',
     image: '/products/024-1.png',
     images: [
       '/products/024-1.png',
       '/products/024-2.png',
       '/products/024-3.png'
-    ]
+    ],
+    description: 'Compatível com máquinas de café Lei Sá e Gaia Expresso Bianchi. Encaixe universal padrão DIRIM.',
+    price: 'R$ 5,90',
   },
-  '025': {
+  '025 e 026': {
+    name: 'Presilhas Salva Pote',
     image: '/products/025-1.png',
     images: [
       '/products/025-1.png',
       '/products/025-2.png',
-      '/products/025-3.png'
-    ]
-  },
-  '026': {
-    image: '/products/026-1.png',
-    images: [
+      '/products/025-3.png',
       '/products/026-1.png',
-      '/products/026-2.png'
-    ]
+      '/products/026-2.png',
+    ],
+    description: 'Compatível com potes de café/cacau/leite e afins Lei Sá e Gaia Expresso Bianchi. Encaixe universal padrão DIRIM.',
+    price: '19,60',
+    priceNote: 'o par'
   },
   '027': {
+    name: 'Alongador da calha, separador de leite',
     image: '/products/027-1.png',
     images: [
       '/products/027-1.png',
       '/products/027-2.png',
       '/products/027-3.png'
-    ]
+    ],
+    description: 'Compatível com máquina Vend. Encaixe universal padrão DIRIM.',
+    price: 'R$ 7,90'
   },
   '028': {
+    name: 'Anel do Copo batedor',
     image: '/products/028-1.png',
     images: [
       '/products/028-1.png',
       '/products/028-2.png'
-    ]
+    ],
+    description: 'Anel de vedação do Copo de mistura. Compatível com máquinas de café Lei Sá e Gaia Expresso Bianchi. Encaixe universal padrão DIRIM.',
+    price: 'R$ 10,45'
   },
   '029': {
+    name: 'Bandeja Ruby Nova',
     image: '/products/029-1.png',
     images: [
       '/products/029-1.png',
       '/products/029-2.png',
       '/products/029-3.png'
-    ]
+    ],
+    description: 'Compatível com a máquina Ruby',
+    price: 'R$ 23,90'
   },
   '031': {
+    name: 'Trava Rosca do Pote',
     image: '/products/031-1.png',
     images: [
       '/products/031-1.png',
       '/products/031-2.png'
-    ]
+    ],
+    description: 'Compatível com potes de café/cacau/leite e afins Lei Sá e Gaia Expresso Bianchi. Encaixe universal padrão DIRIM.',
+    price: 'R$ 18,90',
   },
   '033': {
-    name: 'Peça 031',
+    name: 'Caixa de Aspiração',
     image: '/products/033-1.png',
     images: [
       '/products/033-1.png',
       '/products/033-2.png',
       '/products/033-3.png'
-    ]
+    ],
+    description: 'Compatível com máquinas de café Lei Sá e Gaia Expresso Bianchi. Encaixe universal padrão DIRIM.',
+    price: 'R$ 31,90',
   },
   '034': {
-    name: 'Peça 032',
+    name: 'Bandeja de Pingo',
     image: '/products/034-1.png',
     images: [
       '/products/034-1.png',
       '/products/034-2.png',
       '/products/034-3.png'
-    ]
+    ],
+    description: 'Compatível com LEI 400 e BVN952 Bianchi',
+    price: 'R$ 36,00',
   }
 }
 
@@ -338,4 +363,4 @@ export const products: Product[] = Array.from({ length: 34 }, (_, index) => {
     description: 'Peça do catálogo 3 Duna. Mais informações sobre este modelo serão adicionadas em breve.',
     ...override
   }
-}).filter(product => !['011', '030', '032'].includes(product.code))
+}).filter(product => !['011', '026', '030', '032'].includes(product.code))
