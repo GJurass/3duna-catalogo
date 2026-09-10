@@ -100,11 +100,14 @@ const productOverrides: Record<string, Partial<Product>> = {
     price: 'R$ 17,60'
   },
   '005': {
+    name: 'Tampa para Torre de Copos',
     image: '/products/005-1.png',
     images: [
       '/products/005-1.png',
       '/products/005-2.png'
-    ]
+    ],
+    description: 'Tampa de reposição para torre de copos, desenvolvida para garantir melhor acabamento e proteção do compartimento. Compatível com as máquinas LEI 400 e BVM 952 Bianchi.',
+    price: 'R$ 33,00'
   },
   '006': {
     image: '/products/006-cover.png',
@@ -145,7 +148,7 @@ const productOverrides: Record<string, Partial<Product>> = {
       '/products/009-2.png'
     ],
     price: 'R$ 38,00',
-    priceNote: 'a unidade',
+    priceNote: 'o conjunto',
     description: 'Caixa de aspiração desenvolvida para reposição e organização do sistema interno da máquina. Compatível com a máquina de café Bianchi BVM 952.'
   },
   '010': {
@@ -233,11 +236,14 @@ const productOverrides: Record<string, Partial<Product>> = {
     ]
   },
   '022': {
+    name: 'Calha Direita LEI Sá',
     image: '/products/022-1.png',
     images: [
       '/products/022-1.png',
       '/products/022-2.png'
-    ]
+    ],
+    description: 'Calha direita desenvolvida para reposição do conjunto da máquina. Compatível exclusivamente com o pote utilizado nas máquinas LEI Sá, garantindo encaixe adequado e funcionamento correto.',
+    price: 'R$ 15,00'
   },
   '023': {
     image: '/products/023-1.png',
