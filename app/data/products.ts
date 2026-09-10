@@ -227,18 +227,24 @@ const productOverrides: Record<string, Partial<Product>> = {
     ]
   },
   '020': {
+    name: 'Calha',
     image: '/products/020-1.png',
     images: [
       '/products/020-1.png',
       '/products/020-2.png'
-    ]
+    ],
+    description: 'Compatível com máquinas de café Lei Sá e Gaia Expresso Bianchi. Encaixe universal padrão DIRIM.',
+    price: 'R$ 21,75'
   },
   '021': {
+    name: 'Calha Esquerda LEI Sá',
     image: '/products/021-1.png',
     images: [
       '/products/021-1.png',
       '/products/021-2.png'
-    ]
+    ],
+    description: 'Calha esquerda desenvolvida para reposição do conjunto da máquina. Compatível exclusivamente com o pote utilizado nas máquinas LEI Sá, garantindo encaixe adequado e funcionamento correto.',
+    price: 'R$ 15,00'
   },
   '022': {
     name: 'Calha Direita LEI Sá',
